@@ -1,0 +1,200 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+    url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Futura PT", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #E5E5E5;
+}
+.contact {
+  padding-top: 118px;
+  background-image: url(../img/doctor-dog.png);
+  background-repeat: no-repeat;
+  height: 585px;
+  background-size: contain;
+  background-position: right calc(50% - 420px) bottom;
+}
+.container {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container__contact--title {
+  padding-left: 177px;
+}
+.contact__box {
+  max-width: 447px;
+  padding-bottom: 117px;
+}
+.contact__name {
+  font-size: 70px;
+  line-height: 64px;
+  margin-bottom: 27px;
+  margin-top: 0;
+}
+.contact__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+}
+.contact__connection {
+  display: flex;
+}
+.contact__item {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  margin-right: 90px;
+}
+.contact__list:nth-child(3) {
+  margin-right: 0;
+}
+.contact__beforeimg--map::before {
+  display: inline-block;
+  width: 76px;
+  height: 72px;
+  margin-bottom: 26px;
+  background-position: top left;
+  background-image: url(../img/location.png);
+  background-repeat: no-repeat;
+  content: "";
+}
+.contact__beforeimg--calendar::before {
+  display: inline-block;
+  width: 76px;
+  height: 72px;
+  margin-bottom: 26px;
+  background-position: top left;
+  background-image: url(../img/calendar.png);
+  background-repeat: no-repeat;
+  content: "";
+}
+.contact__beforeimg--phone::before {
+  display: inline-block;
+  width: 76px;
+  height: 72px;
+  margin-bottom: 26px;
+  background-position: top left;
+  background-image: url(../img/phone.png);
+  background-repeat: no-repeat;
+  content: "";
+}
+.contact__address--text {
+  font-size: 16px;
+  color:  #333333;
+}
+.contact__span {
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+.contact__span--weeknames {
+  font-weight: bold;
+}
+.contact__map {
+  padding-top: 100px;
+  height: 300px;
+  margin-top: 100px;
+  background-image: url(../img/patbg.png);
+  background-position: right calc(50% - 210px) bottom;;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__map--name {
+  position: relative;
+  max-width: 348px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; 
+  margin-top: 100px;
+  font-size: 48px;
+  line-height: 62px;
+  margin-top: 100px;
+}
+.contact__map--name::before {
+  display: block;
+  width: 105px;
+  height: 105px;
+  top: -110px;
+  right: 50px;
+  position: absolute;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/Object.png);
+  content: "";
+}
+.contact__map--imgbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 206px;
+}
+.contact__map--link {
+  display: block;
+  text-decoration: none;
+}
+.contact__map--photo {
+  vertical-align: bottom;
+}
+.contact__link--img {
+  width: 847px;
+  height: 466px;
+}
+.contact__map--dogimg {
+  position: absolute;
+  top: -242px;
+  left: 20px;
+  right: 870px;
+}
